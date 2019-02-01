@@ -13,12 +13,12 @@ namespace Task_1
             int a = int.Parse(Console.ReadLine()); // размер массива 
             int[] arr = new int[a];// создаю массив 
             List<int> ans = new List<int>();// создаю безразмерный массив для праймов 
-            string[] s = Console.ReadLine().Split();// сичтываю числа и сохраняю их как отдельные стринги в массиве 
-            for (int i = 0; i < arr.Length; i++) // форик
+            string[] s = Console.ReadLine().Split();// считываю числа и сохраняю их как отдельные стринги в массиве 
+            for (int i = 0; i < arr.Length; i++) // фор
             {
-                arr[i] = int.Parse(s[i]);// сохраняю стринги в массив в виде чисел 
+                arr[i] = int.Parse(s[i]);// сохраняю стринг в массив в виде чисел 
                 int pr = 0; // создал переменную для проверки чисел на прайм
-                for (int j = 2; j <= (int)Math.Sqrt(arr[i]); j++)// второй форик
+                for (int j = 2; j <= (int)Math.Sqrt(arr[i]); j++)// второй фор
                 {
                     if (arr[i] % j == 0) // проверка на делимость 
                     {
