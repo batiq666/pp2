@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.IO;
 
 
-namespace ConsoleApp1
+namespace Task2
 {
     class Program
     {
@@ -32,7 +34,7 @@ namespace ConsoleApp1
                 {
                     ans.Add(a[i]);
                 }
-            }
+            }   
             StreamWriter sw = new StreamWriter("output.txt");
             for (int i = 0; i < ans.Count(); i++)
             {
