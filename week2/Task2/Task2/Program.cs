@@ -1,48 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-
 
 namespace Task2
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static void writeAnswer(int a)
+        {
+
+
+        }
+        static void Task2()
         {
             StreamReader sr = new StreamReader("input.txt");
-            String[] s = sr.ReadToEnd().Split();
-            int n = s.Count();
-            int[] a = new int[n];
-            List<int> ans = new List<int>();
-            for (int i = 0; i < n; i++)
+            StreamWriter sw = new StreamWriter("output.txt");
+            string[] s = sr.ReadToEnd().Split();
+            int[] a = new int[s.Length - 1];
+            for (int i = 0; i < s.Length - 1; i++)
             {
-                int pr = 0;
+                bool isPrime = true;
                 a[i] = int.Parse(s[i]);
-                for (int j = 2; j <= (int)Math.Sqrt(a[i]); j++)
+                int x = (int)(Math.Sqrt(a[i]));
+                for (int j = 2; j <= x; j++)
                 {
                     if (a[i] % j == 0)
-                    {
-                        pr = 1;
-                        break;
-                    }
-
+                        isPrime = false;
                 }
-                if (pr == 0 && a[i] != 1)
+                if (isPrime && a[i] != 1)
                 {
-                    ans.Add(a[i]);
+                    sw.Write(a[i] + " ");
                 }
-            }   
-            StreamWriter sw = new StreamWriter("output.txt");
-            for (int i = 0; i < ans.Count(); i++)
-            {
-                sw.Write(ans[i] + " ");
             }
             sr.Close();
             sw.Close();
-            Console.ReadKey();
+        }
+        static void Main(string[] args)
+        {
+            Task2();
         }
     }
 }

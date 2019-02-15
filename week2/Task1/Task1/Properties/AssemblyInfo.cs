@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("ConsoleApp1")]
+[assembly: AssemblyTitle("Task1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("ConsoleApp1")]
+[assembly: AssemblyProduct("Task1")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("47362317-8a14-4e1a-afc9-faa3bf12f937")]
+[assembly: Guid("982fb208-6ba6-4c3c-a3fc-34689e91dd22")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
